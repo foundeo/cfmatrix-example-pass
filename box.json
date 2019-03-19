@@ -1,0 +1,7 @@
+{
+  "name":"cfmatrix-example-pass",
+  "devDependencies":{
+        "testbox":"^2.5.0",
+        "commandbox-cfconfig":"^1.0.2"
+  }
+}
