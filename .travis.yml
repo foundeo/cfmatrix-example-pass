@@ -12,6 +12,6 @@ env:
 before_install:
 - git clone --depth 1 https://github.com/foundeo/cfmatrix.git cfmatrix
 install:
-- bash .cfmatrix/install.sh
+- bash ./cfmatrix/install.sh
 script:
 - bash ./cfmatrix/run.sh
