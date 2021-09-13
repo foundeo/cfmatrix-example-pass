@@ -21,9 +21,12 @@ jobs:
     #setup the matrix of CF Engines
     strategy:
       matrix:
-        CFENGINE: ["lucee@5.3", "adobe@2018"]
+        cfengine: ["lucee@5.3", "adobe@2018"]
     steps:
       - uses: actions/checkout@v2
+        with:
+          CFENGINE: ${{ matrix.cfengine }}
+
 
       - name: Clone cfmatrix
         run: git clone --depth 1 https://github.com/foundeo/cfmatrix.git cfmatrix
