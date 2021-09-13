@@ -22,11 +22,10 @@ jobs:
     strategy:
       matrix:
         cfengine: ["lucee@5.3", "adobe@2018"]
+    env:
+          CFENGINE: ${{ matrix.cfengine }}
     steps:
       - uses: actions/checkout@v2
-        env:
-          CFENGINE: ${{ matrix.cfengine }}
-
 
       - name: Clone cfmatrix
         run: git clone --depth 1 https://github.com/foundeo/cfmatrix.git cfmatrix
@@ -36,4 +35,5 @@ jobs:
         
       - name: Run Tests
         run: bash ./cfmatrix/run.sh
+
       
