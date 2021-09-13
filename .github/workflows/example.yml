@@ -8,6 +8,9 @@ on:
 
   workflow_dispatch:
 
+env:
+  TEST_RUNNER_URI: /run-test.cfm
+
 jobs:
   
   cfmatrix:
