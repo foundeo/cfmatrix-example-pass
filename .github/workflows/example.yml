@@ -21,7 +21,7 @@ jobs:
     #setup the matrix of CF Engines
     strategy:
       matrix:
-        cfengine: ["lucee@5.3", "adobe@2018"]
+        CFENGINE: ["lucee@5.3", "adobe@2018"]
     steps:
       - uses: actions/checkout@v2
 
